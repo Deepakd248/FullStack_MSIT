@@ -37,6 +37,26 @@ Q4. Null vs undefined
 Q5 . == vs ===
 Q6. Prime Number Compute Function
 Q7. ArmStrong Number Compute Function
+Ans:-
+   
+function isarm(a) {
+    
+temp =a;
+sum=0;
+while (temp>0){
+    re=a%10;
+    sum += re**3;
+    a=a/10;
+}
+if(sum == a){
+    console.log(` ${a} is  an armstrong`);
+}
+else{
+    console.log(` a is not a armstrong`);
+}
+}
+
+
 Q8. add() - 0
 add(10) - 10
 add(10,20) - 30
